@@ -1,44 +1,35 @@
-# Kyle's Stack
+# My Todos
 
-A starter for building apps with TanStack Start, Radix UI, and capsize typography — with [`@tanstack/intent`](https://github.com/TanStack/intent) skills pre-installed for **Electric**, **TanStack DB**, and **Durable Streams**.
+A reactive, real-time todo app built with Electric SQL and TanStack DB. Create, complete, and delete todos with instant sync across all clients.
 
-## Quick Start
+## Screenshot
+
+<!-- screenshot placeholder -->
+
+## Features
+
+- Add todos with a title
+- Toggle todos as complete/incomplete
+- Delete individual todos
+- Clear all completed todos at once
+- Filter by All / Active / Completed
+- Real-time sync across all browser tabs and clients via Electric SQL
+- Optimistic mutations for instant UI feedback
+
+## Tech Stack
+
+- [Electric SQL](https://electric-sql.com/) — Postgres-to-client real-time sync
+- [TanStack DB](https://tanstack.com/db) — Reactive collections and live queries
+- [TanStack Start](https://tanstack.com/start) — React meta-framework with SSR
+- [Drizzle ORM](https://orm.drizzle.team/) — Type-safe schema and migrations
+- [Radix UI Themes](https://www.radix-ui.com/themes) — Component library
+
+## Getting Started
 
 ```bash
-npx gitpick KyleAMathews/kpb my-app
-cd my-app
 pnpm install
-pnpm dev
+pnpm drizzle-kit generate && pnpm drizzle-kit migrate
+pnpm dev:start
 ```
 
-## Included Skills
-
-This starter comes with skills pre-installed. Just ask your coding agent:
-
-**Electric** — Sync Postgres to your app
-- "Set up Electric sync for my Postgres database"
-- "Run the Electric security checklist"
-
-**TanStack DB** — Reactive client-side data
-- "Add a TanStack DB collection for the users table"
-- "Set up live queries for my todos"
-
-**Durable Streams** — Real-time state sync
-- "Set up a Durable Streams dev environment"
-- "Add presence tracking to my app"
-
-**Radix + Capsize** — Typography
-- "Switch to the Playfair theme"
-- "Show me more font theme options"
-
-## What's Included
-
-- **TanStack Start** - Full-stack React framework
-- **Radix UI** - Accessible components with themes
-- **Capsize typography** - Pixel-perfect text rendering
-- **Dozens of font pairings included** - Ask the agent to set one up
-- **Biome** - Fast linting and formatting
-
-## License
-
-MIT
+Open [http://localhost:8080](http://localhost:8080) to view the app.
